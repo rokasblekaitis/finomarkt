@@ -5,7 +5,7 @@ import clsx from 'clsx'
 import { Container } from '@/components/Container'
 import Image from 'next/image'
 
-import screenshot from '@/images/screenshots/mockup.png'
+import screenshot from '@/images/screenshots/section.png'
 
 interface Feature {
   name?: React.ReactNode
