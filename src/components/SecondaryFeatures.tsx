@@ -2,8 +2,10 @@
 
 import { useId } from 'react'
 import clsx from 'clsx'
-
+import Image from 'next/image'
 import { Container } from '@/components/Container'
+
+import backgroundImage from '@/images/background-features.jpg'
 
 interface Feature {
   name?: React.ReactNode
@@ -225,15 +227,15 @@ function Feature({
 }) {
   return (
     <div className={clsx(className)} {...props}>
-      <div className={clsx('w-9 rounded-lg', 'bg-blue-600')}>
-        <svg aria-hidden="true" className="h-9 w-9" fill="none">
+      <div className={clsx('w-12 rounded-lg')}>
+        <svg aria-hidden="true" className="h-12 w-12" fill="none">
           <feature.icon />
         </svg>
       </div>
-      <h3 className="mt-2 font-display text-xl text-slate-900">
+      <h3 className="mt-2 font-display text-xl text-white">
         {feature.summary}
       </h3>
-      <p className="mt-4 text-sm text-slate-600">{feature.description}</p>
+      <p className="text-md mt-4 text-white">{feature.description}</p>
     </div>
   )
 }
@@ -254,13 +256,21 @@ const CustomFeaturesList = () => (
 export function SecondaryFeatures() {
   return (
     <section
-      id="secondary-features"
-      aria-label="Features for simplifying everyday business tasks"
-      className="pb-14 pt-20 sm:pb-20 sm:pt-32 lg:pb-32"
+      id="features"
+      aria-label="Features for running your books"
+      className="relative overflow-hidden bg-blue-600 pb-28 pt-20 sm:py-32"
     >
+      <Image
+        className="absolute left-1/2 top-1/2 max-w-none translate-x-[-44%] translate-y-[-42%]"
+        src={backgroundImage}
+        alt=""
+        width={2245}
+        height={1636}
+        unoptimized
+      />
       <Container>
         <div className="mx-auto mb-8 max-w-2xl md:text-center">
-          <h2 className="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl">
+          <h2 className="relative font-display text-3xl tracking-tight text-white sm:text-4xl">
             Features you will enjoy
           </h2>
         </div>
