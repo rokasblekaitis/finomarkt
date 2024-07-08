@@ -118,8 +118,8 @@ const features: Array<Feature> = [
   {
     summary: 'Debts',
     description: 'Sell and buy debts',
-    textLeft: 'Companies / People',
-    textRight: 'Debt agencies / 3rd party creditors',
+    textLeft: 'Companies People',
+    textRight: 'Debt agencies 3rd party creditors',
     example:
       'Debt agencies can make profit on collecting debts or a person can buy a counterpart debt to avoid of paying its’ own obligations',
     icon: function ContactsIcon() {
@@ -184,8 +184,8 @@ function Feature({
       <p className="text-md mt-4 text-slate-600 text-white">
         {feature.description}
       </p>
-      <div className="my-4 flex items-center justify-between rounded-lg bg-gray-100 p-4">
-        <p className="text-lg font-semibold">{feature.textLeft}</p>
+      <div className="my-4 flex items-center justify-between rounded-lg bg-gray-100 p-4 xl:h-[128px]">
+        <p className="text-center text-lg font-semibold">{feature.textLeft}</p>
         <div className="flex items-center justify-center">
           <svg
             className="mx-4 h-6 w-6 text-blue-600"
@@ -202,7 +202,7 @@ function Feature({
             ></path>
           </svg>
         </div>
-        <p className="text-right text-lg font-semibold">{feature.textRight}</p>
+        <p className="text-center text-lg font-semibold">{feature.textRight}</p>
       </div>
       <div className="flex items-center gap-2 text-white">
         <svg

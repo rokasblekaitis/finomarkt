@@ -44,11 +44,8 @@ export function Hero() {
         Place to sell your securities and look for next opportunities
       </p>
       <div className="mt-10 flex justify-center gap-x-6">
-        <Button href="/register">Register</Button>
-        <Button
-          href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-          variant="outline"
-        >
+        <Button href="https://forms.gle/Ym2Y3LjbRPGqzSAFA">Register</Button>
+        <Button href="https://forms.gle/Ym2Y3LjbRPGqzSAFA" variant="outline">
           {/* <svg
             aria-hidden="true"
             className="h-3 w-3 flex-none fill-blue-600 group-active:fill-current"

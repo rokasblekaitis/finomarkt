@@ -15,12 +15,13 @@ export function Footer() {
             </div>
           </nav> */}
         </div>
-        <a
-          className="mx-auto mb-6 block w-fit text-lg text-slate-900 hover:text-blue-600"
-          href="mailto:info@finomarkt.com"
+        <div
+          // className="mx-auto mb-6 block w-fit text-lg text-slate-900 hover:text-blue-600"
+          className="mx-auto mb-6 block w-fit text-lg text-slate-900"
+          // href="mailto:info@finomarkt.com"
         >
-          info@finomarkt.com
-        </a>
+          hello@finomarkt.com
+        </div>
         <div className="border-t border-slate-400/10 py-10">
           {/* <div className="flex gap-x-6">
             <Link href="#" className="group" aria-label="TaxPal on X">

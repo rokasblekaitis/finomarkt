@@ -27,7 +27,11 @@ export function CallToAction() {
             To trade securities was privilege for Bigwig Industries. Now Petite
             Startups can list securities and trade online.{' '}
           </p>
-          <Button href="/register" color="white" className="mt-10">
+          <Button
+            href="https://forms.gle/Ym2Y3LjbRPGqzSAFA"
+            color="white"
+            className="mt-10"
+          >
             Register
           </Button>
         </div>

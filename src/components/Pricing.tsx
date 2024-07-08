@@ -68,8 +68,8 @@ function Plan({
   return (
     <section
       className={clsx(
-        'flex flex-col rounded-3xl px-6 sm:px-8',
-        featured ? 'order-first bg-blue-600 py-8 lg:order-none' : 'lg:py-8',
+        'flex flex-col rounded-3xl px-6 py-8 sm:px-8',
+        featured ? 'order-first bg-blue-600 lg:order-none' : 'border',
       )}
     >
       <h3 className="mt-5 font-display text-lg text-white">{name}</h3>
@@ -131,12 +131,12 @@ export function Pricing() {
             work well for you.
           </p> */}
         </div>
-        <div className="mt-16 grid max-w-2xl grid-cols-1 gap-y-10 sm:mx-auto lg:-mx-8 lg:max-w-none lg:grid-cols-3 xl:mx-0 xl:gap-x-8">
+        <div className="mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-10 sm:mx-auto lg:max-w-none lg:grid-cols-3 xl:mx-0">
           <Plan
             name="Free"
             price="0 $/mo."
             description="No fee for make or explore listing "
-            href="/register"
+            href="https://forms.gle/Ym2Y3LjbRPGqzSAFA"
             features={['View basic listing information', 'Add listings']}
           />
           <Plan
@@ -144,7 +144,7 @@ export function Pricing() {
             name="Premium"
             price="49 $/mo."
             description="Explore business with Premium"
-            href="/register"
+            href="https://forms.gle/Ym2Y3LjbRPGqzSAFA"
             features={[
               'View full listing information',
               'Add listings',
@@ -156,7 +156,7 @@ export function Pricing() {
             name="Unlimited"
             price="99 $/mo."
             description="Access  full details of listings"
-            href="/register"
+            href="https://forms.gle/Ym2Y3LjbRPGqzSAFA"
             features={[
               'View full listing information',
               'Add listings',
